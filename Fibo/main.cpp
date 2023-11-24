@@ -14,7 +14,7 @@ int main()
 
     for (int i = 1; i <= N; ++i)
         {
-        if (counter == 2)
+        if (counter == 3)
             {
             cout << a << " ";
             counter = 0;
