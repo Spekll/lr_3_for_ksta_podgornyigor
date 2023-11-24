@@ -11,6 +11,11 @@ int fibbonachi(int N)
     for (int i = 1; i <= N; i++) {
         if (ticker == 3)
         {
+
+=======
+        if (counter == 3)
+            {
+
             cout << a << " ";
             ticker = 0;
         }
