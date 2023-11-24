@@ -2,34 +2,27 @@
 
 using namespace std;
 
-int fibbonachi(int N)
+int main()
 {
-    int ticker = 0;
+    int N;
+    int counter = 1;
+    cout << "Vvedite kol-vo iteraciy N: ";
+    cin >> N;
+
     int a = 0, b = 1, nextTerm;
-    cout <<"Ryad chisel Fobonacci do " << N << "iteraciy: ";
+    cout << "Ryad chisel Fibonacci do " << N << " iteraciy: ";
 
-    for (int i = 1; i <= N; i++) {
-        if (ticker == 3)
+    for (int i = 1; i <= N; ++i)
         {
-
-=======
         if (counter == 3)
             {
-
             cout << a << " ";
-            ticker = 0;
-        }
+            counter = 0;
+            }
         nextTerm = a + b;
         a = b;
         b = nextTerm;
-        ticker++;
-    }
+        counter++;
+        }
     return 0;
-}
-
-int main () {
-    int iteration = 0;
-    cout << "Vvedite kolichestvo iteraciy N: ";
-    cin >> iteration;
-    fibbonachi(iteration);
 }
